@@ -1,0 +1,147 @@
+@import "vars";
+
+/*==========  Desktop First  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* уменьшаем шрифт главного заголовка сайта, уменьшаем параграф хедера*/
+  .header{
+    .h1{
+      font-size: 50px;
+    }
+    p{
+      font-size: 18px;
+      max-width: 700px;
+    }
+    .phone{
+      margin-top: 80px;
+    }
+  }
+  // .device
+  .section-2{
+    padding: 70px;
+  .i-phone{
+    position: relative;
+    left: -370px;
+  }
+  img{
+    width: 725px;
+    height: auto;
+  }
+  .h3{
+    font-size: 35px;
+    line-height: 1.3;
+    margin: 0;
+  }
+  p{
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .button{
+    margin: 50px 20px 0 0;
+    width: 180px;
+
+    }
+    .fa{
+      margin-left: 20px;
+    }
+  }
+    .learn-more{
+      width: 110px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* убираем главное горизонтальное меню, показываем барс, центруем лого*/
+    .header{
+    .h1{
+      font-size: 40px;
+    }
+    p{
+      font-size: 16px;
+      max-width: 600px;
+    }
+   .phone{
+      margin-top: 110px;
+    }
+  }
+  .left-nav, .right-nav{
+    display: none;
+  }
+  .logo{
+    text-align: center;
+  }
+    .bars{
+      display: block !important;
+    }
+  .section-2{
+    .protected{
+      margin-top: 0;
+    }
+    .i-phone{
+      left: 0;
+      margin-top: 40px;
+    }
+  }
+  .flex-device{
+    display: flex;
+    flex-direction: column;
+    &1{
+      order: 1;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* */
+  .header{
+     .phone{
+      margin-top: 110px;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */
+  .header{
+     .phone{
+      margin-top: 100px;
+    }
+  }
+}
+
+
+/*==========  Mobile First  ========== */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */
+}
