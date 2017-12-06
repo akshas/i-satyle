@@ -42,8 +42,23 @@ $(function() {
 	// каруселя //
 	//////////////
 	$('.owl-carousel').owlCarousel({
-		items: 4,
+		items: 1,
 		loop: true,
-		center: true
+		smartSpeed: 700,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		navClass:['nav-prev', 'nav-next']
+		// center: true
+	});
+
+	// picture active
+	$('.nav-prev, .nav-next').on('click', function(){
+		var slide = $('.owl-item.active .slider').attr('data-picture');
+		var imgClass = $('.' + slide);
+		var imgs = $('.slider_photos');
+		var active = imgs.find('.active');
+		active.removeClass('active');
+		imgClass.addClass('active');
 	});
 });
+
